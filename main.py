@@ -1748,10 +1748,12 @@ from random import randint
 #     return num
 # print(return_num(5))
 
-s = 5
-print(s)
+# s = 5
+# print(s)
 
-
+a = 5
+print('Hello')
+print(a)
 
 
 
