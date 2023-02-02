@@ -523,7 +523,6 @@ import random
 
 from random import randint
 
-
 # n1 = int(input('Введите размер первого списка: '))
 # n2 = int(input('Введите размер второго списка: '))
 # a = [randint(0, 10) for i in range(n1)]
@@ -1751,267 +1750,146 @@ from random import randint
 # s = 5
 # print(s)
 
-a = 5
-print('Hello')
-print(a)
+# a = 5
+# print('Hello')
+# print(a)
+
+#
+# print((int('18')))
+#
+# print(int('100', 2))
+# print(int('100', 8))
+# print(int('100', 16))
+
+# print(bin(18))
+
+# q = 'Pyt'
+# w = 'hon'
+# e = q + w
+# print(e)
+# print(e * 3)
+# print('q' in e)
+#
+# print(e[0])
+
+# s = 'Python'
+# s = s[:3] + 't' + s[4:]
+# print(s)
+
+
+# def change_char_to_str(s, c_old, c_new):
+#     s2 = ''
+#     for i in range(len(s)):
+#         if s[i] == c_old:
+#             s2 += c_new
+#         else:
+#             s2 += s[i]
+#     return s2
+#
+#
+# str1 = "Я изучая Nython. Мне нравится Nython. Nython очень интересный язык программирования."
+# str2 = change_char_to_str(str1, 'N', 'P')
+# print(str1)
+# print(str2)
+
+# print('C:\\folder\\file.txt')
+
+# name = 'Дмитрий'
+# age = 25
+# print(f'Меня зовут {name}, мне {age} лет')
+
+# s = '''<div>
+#     <p> Text </p>
+# </div>
+# '''
+# print(s)
+
+# def square(n):
+#     """Принимает число n, возвращает квадрат числа n"""
+#     return n**2
+#
+# print(square(5))
+#
+# print(square.__doc__)
+
+# import math
+#
+# def cylinder(r, h):
+#     """
+#     Вычисляет площадь цилиндра.
+#
+#     Вычисляет площадь цилиндра на основании заданной высоты и радиуса основания
+#
+#     :param r: положительное число, радиус основания цилиндра
+#     :param h: положительное число, высота цилиндра
+#     :return: положительное число, площадь цилиндра
+#     """
+#     return 2 * math.pi * r * (r + h)
+#
+# print(cylinder(2,4))
+# print(cylinder.__doc__)
+
+# print(ord('a'))
+
+# while True:
+#     n = input('-> ')
+#     if n != '-1':
+#         print(ord(n))
+#     else:
+#         break
+
+# my_str = 'Test string for me'
+# arr = [ord(x) for x in my_str]
+# print('ASCII code: ', arr)
+# arr = [sum(arr) // len(arr)] + arr
+# print('Среднее арифметическое: ', arr)
+# arr += [ord(x) for x in input('-> ')[:3] if ord(x) not in arr]
+# print(arr)
+# if arr[-1] in arr[:-1]:
+#     print(arr.count(arr[-1]) -1)
+
+# print(chr(33))
+# print(chr(8364))
+
 
+# a = 122
+# b = 97
+# if a > b:
+#     a, b == b, a
+# for i in range(a, b + 1):
+#     print(chr(i), end=' ')
 
+# print('apple' == 'Apple')
+# print('apple' > 'Apple')
 
+# s = 'hello, WORLD! I am learning Python'
+# print(s.capitalize())
+# print(s.lower())
 
 
+# str = 'Замените в этой строке все появления буквы "о" на букву "О", кроме первого и последнего вхождения'
+# a = str[:str.find('о') + 1]
+# b = str[str.find('о') + 1:str.rfind('о')]
+# c = str[str.rfind('о'):]
+# print(a + b.replace('о', 'О') + c)
 
+# s = "-"
+# seq = ('a', 'b', 'c')
+# print(s.join(seq))
+#
+# print('..'.join(['1', '99']))
 
+# a = input("-> ").split()
+# print(a)
 
+# a = input('Введите ФИО: ').split()
+# print(f'{a[0]} {a[1][0]}. {a[2][0]}.')
 
+import re
 
+s = 'Я ищу совпадения в 2023 году. И я их найду в 2 счёта.'
+reg = '2023'
+# print(re.findall(reg, s))
+# print(re.search(reg, s))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(re.findall(reg, s))
