@@ -2,7 +2,7 @@ from math import pi
 
 
 class Sphere:
-    def __init__(self, radius=0.6, volume=0, area=0, x=0, y=0, z=0):
+    def __init__(self, radius, volume, area, x, y, z):
         self.__radius = radius
         self.__volume = volume
         self.__area = area
@@ -45,7 +45,7 @@ class Sphere:
         return (self.__x - x) ** 2 + (self.__y - y) ** 2 + (self.__z - z) ** 2 < self.__radius ** 2
 
 
-s1 = Sphere()
+s1 = Sphere(0.6, 0, 0, 0, 0, 0)
 print('Радиус сферы: ', s1.radius)
 print('Объём сферы: ', s1.volume)
 print('Площадь внешней поверхности сферы: ', s1.area)
